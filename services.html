@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Connie's Nails</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .topnav {
+            background-color: grey;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #d16be3;
+            color: black;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .service-box {
+            border: 2px solid #333;
+            padding: 20px;
+            margin-right: 20px;
+            display: inline-block;
+            white-space: normal;
+            vertical-align: top;
+            position: relative;
+        }
+
+        .service-content {
+            padding-left: 20px;
+            max-width: 400px;
+        }
+
+        .service-content h3 {
+            margin-top: 0;
+        }
+
+        .service-image {
+            width: 400px;
+            height: 350px;
+            border-radius: 5px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .price-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .book-now {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #d16be3;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .book-now:hover {
+            background-color: #b449cb;
+        }
+
+        footer {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        footer a:hover {
+            color: purple;
+        }
+
+        .video-container {
+            width: 500px;
+            height: 300px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Logo" class="logo">
+            <span>Connie's Nails</span>
+        </div>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="#">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="pricelist.pdf" download>Download Price List</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="service-box">
+            <img src="mn.jpg" alt="Manicure" class="service-image">
+            <div class="service-content">
+                <h3>Manicure</h3>
+                <p>Our manicure service includes trimming, shaping, and painting the nails, as well as hand massage.</p>
+            </div>
+            <div class="price-tag">$25</div>
+            <a href="contact.html" class="book-now">Book Now</a>
+        </div>
+
+        <div class="service-box">
+            <img src="pd.jpg" alt="Pedicure" class="service-image">
+            <div class="service-content">
+                <h3>Pedicure</h3>
+                <p>Our pedicure service includes trimming, shaping, and painting the toenails, as well as foot massage.</p>
+            </div>
+            <div class="price-tag">$30</div>
+            <a href="contact.html" class="book-now">Book Now</a>
+        </div>
+
+        <div class="service-box">
+            <img src="combo.jpg" alt="Combo" class="service-image">
+            <div class="service-content">
+                <h3>Combo</h3>
+                <p>Our combo service includes manicure and pedicure together, with additional hand and foot massage.</p>
+            </div>
+            <div class="price-tag">$50</div>
+            <a href="contact.html" class="book-now">Book Now</a>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="gelontips.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Connie's Nails. All rights reserved.</p>
+    </footer>
+</body>
+</html>

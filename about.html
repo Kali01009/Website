@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Connie's Nails</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: grey;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .topnav {
+            background-color: grey;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #d16be3;
+            color: black;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        footer a:hover {
+            color: purple;
+        }
+
+        .about {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(128, 128, 128, 0.3);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .about h2 {
+            margin-top: 0;
+        }
+
+        .about ul {
+            padding-left: 20px;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .worker {
+            text-align: center;
+        }
+
+        .worker img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            border: 2px solid #333;
+        }
+
+        .worker p {
+            margin: 0;
+        }
+
+        .reviews {
+            margin-top: 20px;
+        }
+
+        .review {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .review:last-child {
+            border-bottom: none;
+        }
+
+        .rating {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Logo" class="logo">
+            <span>Connie's Nails</span>
+        </div>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="pricelist.pdf" download>Download Price List</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="about">
+            <h2>About Connie's Nails</h2>
+            <p>Welcome to Connie's Nails, your premier destination for exquisite nail care services. Since our establishment in [year], we have been dedicated to providing our clients with top-notch manicure and pedicure services that leave them feeling pampered and beautiful.</p>
+            <p>At Connie's Nails, we pride ourselves on our attention to detail and commitment to customer satisfaction. Our team of highly skilled technicians is trained in the latest nail care techniques to ensure that your experience with us is nothing short of exceptional.</p>
+            <h3>Awards</h3>
+            <ul>
+                <li>Yearly Excellence in Nail Care - NailTech Magazine</li>
+                <li>Best Nail Salon in the City - City Awards</li>
+                <li>Outstanding Customer Service Award - Beauty Excellence Awards</li>
+            </ul>
+
+            <h3>Customer Reviews</h3>
+            <div class="reviews">
+                <div class="review">
+                    <p><strong>Neo Lemana</strong></p>
+                    <p>Amazing service! I always leave Connie's Nails feeling fabulous. Highly recommend!</p>
+                    <p class="rating">Rating: 5 stars</p>
+                </div>
+                <div class="review">
+                    <p><strong>Mpho Ribaneng</strong></p>
+                    <p>Best nail salon in town! The staff is friendly, and the results are always perfect.</p>
+                    <p class="rating">Rating: 5 stars</p>
+                </div>
+                <div class="review">
+                    <p><strong>Catherine Martha</strong></p>
+                    <p>Great experience every time. The attention to detail is unmatched!</p>
+                    <p class="rating">Rating: 5 stars</p>
+                </div>
+                <div class="review">
+                    <p><strong>John Opoku</strong></p>
+                    <p>Connie's Nails never disappoints. The quality of service is exceptional.</p>
+                    <p class="rating">Rating: 5 stars</p>
+                </div>
+                <div class="review">
+                    <p><strong>Helene Makabateng</strong></p>
+                    <p>Highly recommend! Connie's Nails is the best in the business.</p>
+                    <p class="rating">Rating: 5 stars</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Our Team</h3>
+        <div class="team">
+            <div class="worker">
+                <img src="manager.jpg" alt="Worker 1">
+                <p>Manager</p>
+            </div>
+            <div class="worker">
+                <img src="st.jpg" alt="Worker 2">
+                <p>Senior Nail Technician</p>
+            </div>
+            <div class="worker">
+                <img src="nt.jpg" alt="Worker 3">
+                <p>Junior Nail Technician</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Connie's Nails. All rights reserved.</p>
+    </footer>
+</body>
+</html>
